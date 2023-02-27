@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire de recherche</title>
+</head>
+<body>
+
+	<h1>Formulaire de recherche</h1>
+
+	<form method="post" action="RechercheBien.php">
+
+		<p>
+			<label for="ville" title="Veuillez choisir votre ville" class="oblig"> Ville :</label>
+			<select name="selectVille" id="ville" title="Veuillez choisir votre cille">
+		<option value="lille" selected="selected">Lille</option>
+				<option value="roubaix">Roubaix</option>
+		<option value="lys-lez-lannoy">Lys-Lez-Lannoy</option>
+				<option value="tourcoing">Tourcoing</option>
+		<option value="paris">Paris</option>
+			</select>
+		</p>
+		
+		
+		<p>
+			<label for="type" title="Veuillez choisir le type cherché" class="oblig"> Type :</label>
+			<select name="selectType" id="type" title="Veuillez choisir votre cille">
+		<option value="Maison" selected="selected"> Maison </option>
+				<option value="Immeubles">Immeubles </option>
+		<option value="Terrains"> Terrain </option>
+				<option value="Locaux"> Locaux </option>
+		<option value="Appartements"> Appartements </option>
+			</select>
+		</p>
+		
+		<input type="submit" value="Rechercher">
+	</form>
+
+</body>
+</html>

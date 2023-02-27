@@ -1,0 +1,89 @@
+
+body {
+	margin: 1em;
+	padding: 0;
+	font: .8em arial, hevetica, sans-serif;
+	text-align: left;
+	color: black;
+	background: white;
+}
+
+/*** Mise en forme du formulaire ***/
+
+#inscription {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 50em;	/*** Largeur du formulaire ***/
+}
+#titreForm, #piedForm {	/*** Mise en forme du titre et du pied de formulaire ***/
+	font: bold 1.1em arial, hevetica, sans-serif;
+	color: white;
+	background: black;
+	margin: 0;
+	padding: .5em;
+}
+#piedForm {
+	text-align: right; /*** Les boutons sont align�s � droite ***/
+}
+#piedForm input {
+	font-weight: bold; /*** Pour am�liorer la lisibilit� des boutons ***/
+	margin-left: 1em;
+}
+#corpForm {	/*** Mise en fome du corp du formulaire (bordure, couleur du fond...) ***/
+	border: 1px solid black;
+	color: black;
+	background: #efefef;
+	margin: 0;
+	padding: 1em;
+}
+#corpForm fieldset {	/*** Mise en forme des cadres ***/
+	margin: 0;
+	font-style: normal;
+	padding: 0 1em 1em;
+}
+#corpForm legend {	/*** Mise en forme des titres des cadres ***/
+	font-weight: bold;
+	color: black;
+	background: transparent;
+}
+
+#corpForm p {	/*** Mise en forme des lignes du formulaire ***/
+	padding: .2em 0;
+	margin: 0 0 .2em 0;
+}
+
+
+#corpForm fieldset#coordonnees label {	/*** Mise en forme des intitulés de champs ***/
+	float: left;	
+	width: 30%;	/*** Les intitulés prennent 1/3 de la largeur totale du formulaire... ***/
+	text-align: right;	/*** ... et ils sont alignés � droite... ***/
+	margin: 0;
+	padding: 0 .5em 0 0;
+	line-height: 1.8;	/*** ... et centrés verticalement. ***/
+}
+#corpForm label:hover, #piedForm input {
+	cursor: pointer;	/*** Petite astuce pour apprendre aux utilisateurs à cliquer sur les intitulés ***/
+}
+#corpForm label.oblig {
+	font-weight: bold;	/*** Mise en évidence des champs obligatoires ***/
+}
+#corpForm .legende {	/*** Mise en forme des aides contextuelles ***/
+	font-style: italic;
+	color: #666;
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}
+#corpForm a.aide {	/*** Mise en forme des bulles d'aide ***/
+	text-decoration: none;
+}
+#corpForm a.aide img {	/*** Mise en forme de l'image des bulles d'aide ***/
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#corpForm a.aide:hover {	/*** Le curseur de la souris change d'aspect quand il passe au-dessus d'une bulle d'aide ***/
+	cursor: help;
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>TP newsletter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="../styles/stylesNewsLetter.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form name="inscription" id="inscription" method="post" action="#">
+    <div id="titreForm">Inscription à notre Newsletter</div>
+    <div id="corpForm">
+	<fieldset id="coordonnees"><br />
+	<p>
+            <label for="eMail" title="Veuillez saisir votre adresse email" class="oblig">* e-Mail :</label>
+            <input type="email" name="eMail" id="eMail" title="Veuillez saisir votre adresse e-mail" />
+            <a href="#" class="aide" title="Votre adresse e-mail ne sera pas utilisée à des fins commerciales">
+                <img src="../img/icon_help.gif" />
+            </a>
+	</p>
+	<p>
+            <label for="pays" title="Veuillez choisir votre pays" class="oblig">* Pays :</label>
+            <select id="pays" title="Veuillez choisir votre pays">
+		<option value="france" selected="selected">France</option>
+                <option value="allemagne">Allemagne</option>
+		<option value="etatsunis">&Eacute;tats-Unis</option>
+                <option value="canada">Canada</option>
+		<option value="japon">Japon</option>
+                <option value="chine">Chine</option>
+        <option value="Sri-Lanka">Sri-Lanka</option>
+            </select>
+	</p>
+	</fieldset>
+	<br />
+	<fieldset id="periodicite"> <legend>Périodicité</legend>
+	<span class="legende">Choisissez la fréquence à laquelle vous souhaitez recevoir notre newsletter :</span>
+	<p>
+            <input type="radio" name="periode" id="periodeH" value="52" checked="checked" />
+            <label for="periodeH" title="Notre newsletter vous sera envoyée toutes les semaines">Newsletter hebdomadaire</label>
+            <br />
+            <input type="radio" name="periode" id="periodeM" value="12" />
+            <label for="periodeM" title="Notre newsletter vous sera envoyée tous les mois">Newsletter mensuelle</label>
+            <br />
+            <input type="radio" name="periode" id="periodeT" value="4" />
+            <label for="periodeT" title="Notre newsletter vous sera envoyée tous les trimestres">Newsletter trimestrielle</label>
+	</p>
+	</fieldset>
+        <br />
+	<em>* Champs obligatoires</em>
+    </div>
+    
+</form>
+    <div id="piedForm">
+			<input type="submit" name="valid" id="valid" value="S'inscrire" />
+    </div>
+</body>
+</html>
+
+
+	
+
